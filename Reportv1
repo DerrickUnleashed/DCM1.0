@@ -1,0 +1,185 @@
+==================================================
+Model : Random Forest
+==================================================
+Features shape: (85, 23520)
+Labels shape: (85,)
+
+Label distribution:
+ target
+1    73
+0    12
+Name: count, dtype: int64
+
+After split:
+  X_train shape: (68, 23520)
+  X_test shape: (17, 23520)
+  y_train distribution:
+ target
+1    58
+0    10
+Name: count, dtype: int64
+  y_test distribution:
+ target
+1    15
+0     2
+Name: count, dtype: int64
+
+Random Forest Classification Results:
+Accuracy: 0.9411764705882353
+
+Classification Report:
+               precision    recall  f1-score   support
+
+      NORMAL       1.00      0.50      0.67         2
+         DCM       0.94      1.00      0.97        15
+
+    accuracy                           0.94        17
+   macro avg       0.97      0.75      0.82        17
+weighted avg       0.94      0.94      0.93        17
+
+Confusion Matrix:
+ [[ 1  1]
+ [ 0 15]]
+AUC-ROC Score: 0.75
+Jaccard Score: 0.9375
+Precision-Recall AUC: 1.0
+Matthews Correlation Coefficient: 0.6846531968814576
+Cohen's Kappa: 0.6382978723404256
+Log Loss: 0.16810152279321383
+
+Top 10 Most Important Features:
+feature  importance
+ AGPAT3    0.020172
+PPP1R3B    0.017012
+  SNRPE    0.014331
+    MRO    0.010000
+ LARP4B    0.010000
+ NDUFB5    0.010000
+  PPTC7    0.010000
+   GLCE    0.010000
+SCGB1D2    0.010000
+ VPS13D    0.009768
+
+==================================================
+Model : XGBoost
+==================================================
+Features shape: (85, 23520)
+Labels shape: (85,)
+
+Label distribution:
+ target
+1    73
+0    12
+Name: count, dtype: int64
+
+After split:
+  X_train shape: (68, 23520)
+  X_test shape: (17, 23520)
+  y_train distribution:
+ target
+1    58
+0    10
+Name: count, dtype: int64
+  y_test distribution:
+ target
+1    15
+0     2
+Name: count, dtype: int64
+
+XGBoost Classification Results (Best Model):
+Accuracy: 0.9411764705882353
+
+Classification Report:
+               precision    recall  f1-score   support
+
+      NORMAL       1.00      0.50      0.67         2
+         DCM       0.94      1.00      0.97        15
+
+    accuracy                           0.94        17
+   macro avg       0.97      0.75      0.82        17
+weighted avg       0.94      0.94      0.93        17
+
+Confusion Matrix:
+ [[ 1  1]
+ [ 0 15]]
+AUC-ROC Score: 0.8333333333333333
+Jaccard Score: 0.9375
+Precision-Recall AUC: 0.9749962537462538
+Matthews Correlation Coefficient: 0.6846531968814576
+Cohen's Kappa: 0.6382978723404256
+Log Loss: 0.21506157709695484
+
+Top 10 Most Important Features:
+    feature  importance
+      ATP5J    0.335813
+      PPTC7    0.194125
+      SMCO4    0.118729
+   C1orf168    0.115984
+     AFG3L2    0.070477
+      WHAMM    0.060323
+RP5-930J4.4    0.035588
+      NXPE3    0.030485
+       EIF5    0.022370
+        GNS    0.016107
+
+==================================================
+Model : LightGBM
+==================================================
+Features shape: (85, 23520)
+Labels shape: (85,)
+
+Label distribution:
+ target
+1    73
+0    12
+Name: count, dtype: int64
+
+After split:
+  X_train shape: (68, 23520)
+  X_test shape: (17, 23520)
+  y_train distribution:
+ target
+1    58
+0    10
+Name: count, dtype: int64
+  y_test distribution:
+ target
+1    15
+0     2
+Name: count, dtype: int64
+
+LightGBM Classification Results (Best Model):
+Accuracy: 0.9411764705882353
+
+Classification Report:
+               precision    recall  f1-score   support
+
+      NORMAL       1.00      0.50      0.67         2
+         DCM       0.94      1.00      0.97        15
+
+    accuracy                           0.94        17
+   macro avg       0.97      0.75      0.82        17
+weighted avg       0.94      0.94      0.93        17
+
+Confusion Matrix:
+ [[ 1  1]
+ [ 0 15]]
+AUC-ROC Score: 1.0
+Jaccard Score: 0.9375
+Precision-Recall AUC: 1.0
+Matthews Correlation Coefficient: 0.6846531968814576
+Cohen's Kappa: 0.6382978723404256
+Log Loss: 0.06904198854020682
+
+Top 10 Most Important Features:
+    feature  importance
+      WHAMM          24
+      SMCO4          12
+      NXPE3           8
+       UBP1           8
+RP5-930J4.4           7
+       COIL           7
+       DPP8           5
+      TEX22           5
+     POM121           5
+      UBAP1           4
