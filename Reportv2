@@ -47,18 +47,28 @@ Matthews Correlation Coefficient: 0.6846531968814576
 Cohen's Kappa: 0.6382978723404256
 Log Loss: 0.18713887602081633
 
-Top 10 Most Important Features:
-  feature  importance
-     EIF5    0.015482
-     MGAM    0.014413
-   AGPAT3    0.013772
-    WDR49    0.013114
-EP300-AS1    0.012255
-     GLCE    0.010000
-     SGCB    0.010000
-    SMAD4    0.010000
-   LRRTM4    0.010000
-     PKP4    0.010000
+Top 20 Most Important Features:
+                 feature  importance
+                    EIF5    0.015482
+                    MGAM    0.014413
+                  AGPAT3    0.013772
+                   WDR49    0.013114
+               EP300-AS1    0.012255
+                    GLCE    0.010000
+                    SGCB    0.010000
+                   SMAD4    0.010000
+                  LRRTM4    0.010000
+                    PKP4    0.010000
+FAM136A /// LOC100287852    0.010000
+                  AFG3L2    0.009744
+                 CAMSAP1    0.009090
+                   KIF1B    0.009006
+             RP5-930J4.4    0.008934
+            LOC101928968    0.008934
+                 XPNPEP3    0.008934
+                  RPS15A    0.008934
+              AC005523.2    0.008847
+                    RHOQ    0.008847
 
 ==================================================
 Model : XGBoost
@@ -109,7 +119,7 @@ Matthews Correlation Coefficient: 0.6846531968814576
 Cohen's Kappa: 0.6382978723404256
 Log Loss: 0.21506157709695484
 
-Top 10 Most Important Features:
+Top 20 Most Important Features:
     feature  importance
       ATP5J    0.335813
       PPTC7    0.194125
@@ -121,6 +131,16 @@ RP5-930J4.4    0.035588
       NXPE3    0.030485
        EIF5    0.022370
         GNS    0.016107
+      PHKA1    0.000000
+     PHOX2A    0.000000
+   PHOSPHO2    0.000000
+   PHOSPHO1    0.000000
+     PHLPP2    0.000000
+     PHLPP1    0.000000
+     PHLDB3    0.000000
+      PHKG1    0.000000
+      PHKG2    0.000000
+      PHKA2    0.000000
 
 ==================================================
 Model : LightGBM
@@ -171,15 +191,25 @@ Matthews Correlation Coefficient: 0.6846531968814576
 Cohen's Kappa: 0.6382978723404256
 Log Loss: 0.09237238564094707
 
-Top 10 Most Important Features:
-    feature  importance
-      WHAMM          23
-      SMCO4          12
-       COIL           8
-      NXPE3           8
-       UBP1           8
-RP5-930J4.4           7
-     POM121           5
-     PHLDA3           4
-    C2orf69           4
-      EMC10           4
+Top 20 Most Important Features:
+       feature  importance
+         WHAMM          23
+         SMCO4          12
+          COIL           8
+         NXPE3           8
+          UBP1           8
+   RP5-930J4.4           7
+        POM121           5
+        PHLDA3           4
+       C2orf69           4
+         EMC10           4
+          DPP8           4
+        ZNHIT6           4
+         LSAMP           3
+         GPR31           3
+       CSNK2A1           3
+          GLCE           3
+          PHYH           3
+         UBAP1           2
+RP11-727A23.11           2
+          SNPH           2
